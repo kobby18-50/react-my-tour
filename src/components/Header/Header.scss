@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+.nav-link {
+    align-items: center;
+    background-color: $mainGrey;
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    justify-content: center;
+}
+.nav-link > * {
+    color: $mainBlack;
+    text-decoration: none;
+    transition: all, 0.3s linear;
+    &:hover{
+        color: $mainGreen;
+    }
+}
+
+.active {
+    color: $mainGreen;
+}
+.nav-link > :not( :last-child ) { margin-right: 2em; }
